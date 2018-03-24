@@ -49,7 +49,7 @@ for(var i = 0; i < canvas.width; i ++){
 }
 
 function Spaceship(size, position, power) {
-    this.color = "gold";
+    this.color = "blue";
     this.width = size;
     this.height = size * 2.5;
     this.position = position;
@@ -133,7 +133,7 @@ Spaceship.prototype.draw = function(){
   drawText(Math.round(this.speed * 10)/10, 44, 28, "black");
   drawRect(this.rightLegX, this.rightLegY, 1, 1, "gray");
   if(this.damage != 0 && !cracksDrawn){
-    for(var i = 0; i < 10; i ++){
+    for(var i = 0; i < 4; i ++){
       var x = canvas.width/2;
       var y = canvas.height/2;
       var up = (Math.random() > .5);
